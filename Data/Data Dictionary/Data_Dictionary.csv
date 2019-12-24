@@ -1,0 +1,140 @@
+TABLE NAME	SYSTEM FIELD NAME	Count not null	# Missing	% Missing	Unique Values	Used in Data For Model	Updated on Record Creation 	Field Description
+ODS_SFBILL_TRANSACTION__C	SFBILL__ROOTCAUSE__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGPHONE__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__CUSTSERVICESTATUS__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__CUSTSERVICESUBTYPE__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__CUSTSERVICETYPE__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	CONNECTIONSENTID	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	CONNECTIONRECEIVEDID	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	LASTREFERENCEDDATE	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	LASTVIEWEDDATE	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGEMAIL__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__REVPROCESSINGMSG__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__DIVISION__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGFAX__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__CUSTSERVICECATEGORY__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	LOCKREQUESTID__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__LEGACYINVOICEID__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	E_INVOICING__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__DELIVERYVIA__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__REASONFORRETURN__C	0	1585685	100	0	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__HANDLEDBY__C	3	1585682	100	1	N	N	All Null and not used
+ODS_SFBILL_TRANSACTION__C	SFBILL__ESCALATION__C	113	1585572	100	5	Y	N	"This field is filled out when an invoice / transaction has become an issue and needs further attention from sales, bad debt or management"
+ODS_SFBILL_TRANSACTION__C	SFBILL__DELIVERYMETHOD__C	803	1584882	99.9	6	N	N	"The method that payment will be deilvered. (Ex: ACH, USPS, Wire Transfer) *Non required field so should not use."
+ODS_SFBILL_TRANSACTION__C	SFBILL__CHECKAMOUNT__C	832	1584853	99.9	712	N	N	"could be check amount, payment amt.  Would not suggest using"
+ODS_SFBILL_TRANSACTION__C	SFBILL__MAILDATE__C	1436	1584249	99.9	214	N	N	Only filled out when customer actually sends a check.  Not required
+ODS_SFBILL_TRANSACTION__C	SFBILL__TRACKING__C	1593	1584092	99.9	1109	N	N	Not consistantly used to track packge or mail
+ODS_SFBILL_TRANSACTION__C	SFBILL__DATESCHEDULEDWO__C	2372	1583313	99.9	250	N	N	Not consistantly used
+ODS_SFBILL_TRANSACTION__C	SFBILL__CHECK__C	2447	1583238	99.8	2009	N	N	"could be the check number, wire ref number, or payment.  Would not suggest using"
+ODS_SFBILL_TRANSACTION__C	SFBILL__SUSPENDEDDATE__C	5137	1580548	99.7	295	N	N	Only filled out if the customer is suspended for not paying on time
+ODS_SFBILL_TRANSACTION__C	SFBILL__COMMENTS__C	5858	1579827	99.6	5328	N	N	Reference field used by collectors.  Comments get reflected on the invoice.  Might not be good to use.
+ODS_SFBILL_TRANSACTION__C	SFBILL__FORECAST__C	8344	1577341	99.5	38	Y	N	"Collectors estimate on what will be collected.  Format = Region, Size, Month, Fiscal Year"
+ODS_SFBILL_TRANSACTION__C	SFBILL__DATESCHEDULEDFDL__C	8419	1577266	99.5	250	N	N	Not consistantly used
+ODS_SFBILL_TRANSACTION__C	SFBILL__PROMISEDATE__C	8633	1577052	99.5	278	N	N	filled out when customer provides a date they promise to pay by.  Will already be late if this is filled out.
+ODS_SFBILL_TRANSACTION__C	SFBILL__DATESCHECANCEL__C	9493	1576192	99.4	294	N	N	Not consistantly used
+ODS_SFBILL_TRANSACTION__C	SUSPENSIONREQPROCESSSTATUS__C	16461	1569224	99	3	N	N	"Used for small business or mid market only.  Request made for customer suspension.  (values = Created, Ignore, Error)"
+ODS_SFBILL_TRANSACTION__C	SFBILL__LASTPRINTDATE__C	17414	1568271	98.9	213	N	N	Last date the invoice was printed and sent.
+ODS_SFBILL_TRANSACTION__C	NEXTSUSPENSIONDATE__C	26188	1559497	98.3	267	N	N	Setting a future suspension date if customer contacts and is looking for more time or different terms
+ODS_SFBILL_TRANSACTION__C	PAYMENTMOVEEXCEPREASON__C	29075	1556610	98.2	9	N	N	The payment date can be moved and this field captures the exception reason
+ODS_SFBILL_TRANSACTION__C	PAYMENTMOVEMENTSTATUS__C	29075	1556610	98.2	3	N	N	"Status of the payment move (Inprocess, processed)"
+ODS_SFBILL_TRANSACTION__C	REPLACEMENTORDER__C	29075	1556610	98.2	18298	Y	N	Is there a replacement order attached - Might not be relevant for invoice
+ODS_SFBILL_TRANSACTION__C	SFBILL__MODEOFCONTACT__C	42226	1543459	97.3	3	N	Y	"The contact method for the customer (values = email, phone, email&phone)"
+ODS_SFBILL_TRANSACTION__C	SFBILL__CMREASON__C	65058	1520627	95.9	18	N	N	"Only appears on a specific type of transaction ""credit memo"""
+ODS_SFBILL_TRANSACTION__C	SFBILL__CMTRIGGERDATETIME__C	65058	1520627	95.9	291	N	N	For credit memos
+ODS_SFBILL_TRANSACTION__C	SFBILL__CMCODE__C	65058	1520627	95.9	7	N	N	"Only appears on a specific type of transaction ""credit memo"""
+ODS_SFBILL_TRANSACTION__C	SFBILL__PREVTRXNEXTSYSTEMID__C	67554	1518131	95.7	64825	N	N	"Only appears on a specific type of transaction ""credit memo"""
+ODS_SFBILL_TRANSACTION__C	SFBILL__PREVIOUSTRANSACTION__C	67554	1518131	95.7	64824	N	N	"Only appears on a specific type of transaction ""credit memo"""
+ODS_SFBILL_TRANSACTION__C	SFBILL__PREVIOUSTRANSTYPE__C	67554	1518131	95.7	1	N	N	"Only appears on a specific type of transaction ""credit memo"""
+ODS_SFBILL_TRANSACTION__C	SFBILL__CMCREATEDBY__C	84085	1501600	94.7	23	N	N	"Only appears on a specific type of transaction ""credit memo"""
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGSALUTATION__C	88267	1497418	94.4	76	N	Y	billing contact salutation
+ODS_SFBILL_TRANSACTION__C	SFBILL__INTERNALREASON__C	93274	1492411	94.1	25	N	N	Only appears on credit or debit memo - not on the transaction
+ODS_SFBILL_TRANSACTION__C	SFBILL__OVERDUE__C	104991	1480694	93.4	1	Y	N	Overdue flag.  Shows up as an image in the org so in database this field is filled with the HTML tag for the image.
+ODS_SFBILL_TRANSACTION__C	SFBILL__TAXEXEMPTIONCODE__C	116808	1468877	92.6	1311	Y	Y	Does customer have a tax exemption (Ex: Non profit)
+ODS_SFBILL_TRANSACTION__C	SFBILL__INTERNALCOMMENTS__C	177571	1408114	88.8	128959	N	N	"Comments about the invoice input by a collector (required for all ENTR customers for all regions,  MM also required - non automated )"
+ODS_SFBILL_TRANSACTION__C	SFBILL__EXCHANGERATEDATE__C	191175	1394510	87.9	657	N	Y	Exchange rate details - not relevent
+ODS_SFBILL_TRANSACTION__C	SFBILL__EXCHANGERATETYPE__C	191175	1394510	87.9	1	N	Y	Exchange rate details - not relevent
+ODS_SFBILL_TRANSACTION__C	COURTESYNOTIFICATIONDATE__C	205329	1380356	87.1	278	N	N	Initial contact that says that the invoice is going to be due soon.
+ODS_SFBILL_TRANSACTION__C	SFBILL__OUTCOME__C	214856	1370829	86.5	87	N	N	Driven by status detail
+ODS_SFBILL_TRANSACTION__C	SFBILL__STATUSDETAIL__C	231521	1354164	85.4	121	N	N	Driven by collection status
+ODS_SFBILL_TRANSACTION__C	SFBILL__COLLECTIONSTATUS__C	236901	1348784	85.1	11	Y	N	What is happening in the collection process input by the collector.
+ODS_SFBILL_TRANSACTION__C	RESELLER__C	267561	1318124	83.1	161	Y	Y	Name of reseller partner
+ODS_SFBILL_TRANSACTION__C	SFBILL__VATREGISTCRNCY__C	474195	1111490	70.1	10	N	Y	Value added tax info
+ODS_SFBILL_TRANSACTION__C	SFBILL__VATREGISTRATIONNUM__C	474195	1111490	70.1	45	N	Y	Value added tax info
+ODS_SFBILL_TRANSACTION__C	SFBILL__VATSEQUENCENUMBER__C	474269	1111416	70.1	460825	N	Y	Value added tax info
+ODS_SFBILL_TRANSACTION__C	LASTACTIVITYDATE	1108546	477139	30.1	294	N	N	Timestamp for when system or collector modifies the record
+ODS_SFBILL_TRANSACTION__C	SFBILL__LASTEMAILDATE__C	1115798	469887	29.6	278	N	N	Last time collector emailed the customer
+ODS_SFBILL_TRANSACTION__C	SFBILL__COLLECTOR__C	1136207	449478	28.3	139	Y	Y	Collector assigned to the account / transaction
+ODS_SFBILL_TRANSACTION__C	OUTSOURCE__PARTNER__C	1145396	440289	27.8	29	Y	Y	"Tag for reseller, send to outsource for small business, could be ENTR collector name"
+ODS_SFBILL_TRANSACTION__C	TOTAL_ACCOUNT__TCV__C	1179235	406450	25.6	341	Y	N	Actually called Days to Pay - This is our Y
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGFIRSTNAME__C	1280961	304724	19.2	29167	N	Y	OBFUCATED - Customer contact first name
+ODS_SFBILL_TRANSACTION__C	SFBILL__SHIPPINGSTATE__C	1448943	136742	8.6	6019	N	Y	using billing vs shipping
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGCOMPANYNAME__C	1454614	131071	8.3	161665	N	Y	OBFUCATED - Customer Business Name
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGSTATE__C	1475536	110149	6.9	6095	N	Y	billing state
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGLASTNAME__C	1491408	94277	5.9	82567	N	Y	OBFUCATED - Customer contact last name
+ODS_SFBILL_TRANSACTION__C	SFBILL__PAYMENTTYPE__C	1492378	93307	5.9	4	Y	Y	If credit card or direct debit = automated transaction.  Unless billing info changes or credit card is decilined
+ODS_SFBILL_TRANSACTION__C	SFBILL__REVPROCESSINGSTATUS__C	1494907	90778	5.7	1	N	N	Revenue processing - not relevent since happens after pmt
+ODS_SFBILL_TRANSACTION__C	SFBILL__PAYMENTTERM__C	1501600	84085	5.3	7	Y	Y	Customer payment terms (EX: NET30)
+ODS_SFBILL_TRANSACTION__C	SFBILL__SHIPPINGZIP__C	1550821	34864	2.2	66975	N	Y	using billing vs shipping
+ODS_SFBILL_TRANSACTION__C	SFBILL__REVOWNER__C	1557469	28216	1.8	12	N	Y	Region that customer is billed in  *shipping country might matter more
+ODS_SFBILL_TRANSACTION__C	SFBILL__REVENUEREGION__C	1557469	28216	1.8	49	N	Y	Region that customer is billed in  *shipping country might matter more
+ODS_SFBILL_TRANSACTION__C	SFBILL__SHIPPINGCOUNTRY__C	1559972	25713	1.6	186	N	Y	using billing vs shipping
+ODS_SFBILL_TRANSACTION__C	SFBILL__SHIPPINGCITY__C	1559972	25713	1.6	31451	N	Y	using billing vs shipping
+ODS_SFBILL_TRANSACTION__C	SFBILL__SHIPPINGSTREET__C	1559972	25713	1.6	200619	N	Y	using billing vs shipping
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGZIP__C	1575885	9800	0.6	55214	N	Y	Billing zip code
+ODS_SFBILL_TRANSACTION__C	SFBILL__GLDATE__C	1584613	1072	0.1	290	N	N	Date that the invoice is paid
+ODS_SFBILL_TRANSACTION__C	SFBILL__EXTERNALSYSTEMREF__C	1584613	1072	0.1	1584613	N	Y	External system reference
+ODS_SFBILL_TRANSACTION__C	SFBILL__EXCHRATEFUNCCRNCY__C	1584613	1072	0.1	5	N	Y	Currency for converting to functional currency.  (Example:  company bills in pesos but converts to USD to spend the money)
+ODS_SFBILL_TRANSACTION__C	SFBILL__EXCHANGERATE__C	1584613	1072	0.1	2042	N	Y	Billing exchange rate - billing currency is probably better then actual conversion
+ODS_SFBILL_TRANSACTION__C	SFBILL__DUEDATE__C	1584613	1072	0.1	351	N	Y	Date that the invoice is due
+ODS_SFBILL_TRANSACTION__C	SFBILL__VATREGCRNCYFXRATE__C	1584613	1072	0.1	2875	N	Y	Value added tax exchange rate
+ODS_SFBILL_TRANSACTION__C	ORGANIZATIONID__C	1584613	1072	0.1	12	N	Y	Internal ID
+ODS_SFBILL_TRANSACTION__C	SFBILL__INVOICEAGE__C	1584613	1072	0.1	371	Y	N	day from when the due date is.  Relevant if the invoice is still open.
+ODS_SFBILL_TRANSACTION__C	INVOICE__AGE__C	1584613	1072	0.1	371	N	N	day from when the due date is.  Is continuous so not good for prediction
+ODS_SFBILL_TRANSACTION__C	SFBILL__ACCOUNTNUMBER__C	1585575	110	0	239910	N	Y	Unique identifer for an account
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGCITY__C	1585655	30	0	29955	N	Y	Billing City
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGSTREET__C	1585679	6	0	176000	N	Y	Billing street
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGLANGUAGE__C	1585682	3	0	12	Y	Y	Language for billing contact
+ODS_SFBILL_TRANSACTION__C	AUDIT_ETL_JOB_INS_KEY	1585685	0	0	282	N	N	Key for the database update job
+ODS_SFBILL_TRANSACTION__C	CREATEDBYID	1585685	0	0	82	N	Y	ID of who created the record
+ODS_SFBILL_TRANSACTION__C	SFBILL__ACCOUNTNAME__C	1585685	0	0	240032	N	Y	OBFUCATED - Name of the Account
+ODS_SFBILL_TRANSACTION__C	ISLOCKED	1585685	0	0	1	N	Y	System admin field
+ODS_SFBILL_TRANSACTION__C	MAYEDIT	1585685	0	0	2	N	Y	System admin field
+ODS_SFBILL_TRANSACTION__C	AUDIT_ETL_JOB_UPD_TS	1585685	0	0	5333	N	N	Timestamp for when the data load job was started
+ODS_SFBILL_TRANSACTION__C	SYSTEMMODSTAMP	1585685	0	0	279	N	Y	Updated if the system modifies the record
+ODS_SFBILL_TRANSACTION__C	LASTMODIFIEDBYID	1585685	0	0	210	N	Y	ID for the person who last modified the record
+ODS_SFBILL_TRANSACTION__C	LASTMODIFIEDDATE	1585685	0	0	290	N	Y	Timestamp for when the record was last modified
+ODS_SFBILL_TRANSACTION__C	CREATEDDATE	1585685	0	0	296	N	Y	When the record was created
+ODS_SFBILL_TRANSACTION__C	SFBILL__X30DAYCONTRACTEXTXN__C	1585685	0	0	2	Y	N	True if 30 day extension is inplace.  Potential to pay late as they are negotiating a renewal
+ODS_SFBILL_TRANSACTION__C	R12CONVERSIONINDICATOR__C	1585685	0	0	1	N	N	Not used anymore - was used for revenue conversion previously
+ODS_SFBILL_TRANSACTION__C	AUTOAPPLYUNAPPLPAYMENTS__C	1585685	0	0	2	N	N	Don't use this field
+ODS_SFBILL_TRANSACTION__C	RECORDTYPEID	1585685	0	0	6	N	Y	ID for the transaction type - need to join this to another object to see the values
+ODS_SFBILL_TRANSACTION__C	CURRENCYISOCODE	1585685	0	0	7	Y	Y	Currency that the customer is billed in
+ODS_SFBILL_TRANSACTION__C	DEL_FLG	1585685	0	0	2	N	Y	Should we filter where delete flag is N?
+ODS_SFBILL_TRANSACTION__C	OWNERID	1585685	0	0	82	N	Y	"JOIN TO RECORD OWNER FOR USER DETAILS?  (tenure, office location, manager?)"
+ODS_SFBILL_TRANSACTION__C	AUDIT_ETL_JOB_UPD_KEY	1585685	0	0	275	N	N	Key for the database update job
+ODS_SFBILL_TRANSACTION__C	COURTESYSENT__C	1585685	0	0	2	Y	N	Courtesy email / notification sent?
+ODS_SFBILL_TRANSACTION__C	NAME	1585685	0	0	1585187	N	Y	Transaction name - don't really need since we have the ID field
+ODS_SFBILL_TRANSACTION__C	SFBILL__ISCHECKOUTPARTNER__C	1585685	0	0	2	N	Y	Should exclude this field - was for old external system
+ODS_SFBILL_TRANSACTION__C	SFBILL__TRANSACTIONTYPE__C	1585685	0	0	3	N	Y	We should filter on INV type only so that we are looking at invoices and not credit / debit memos
+ODS_SFBILL_TRANSACTION__C	SFBILL__LTVCONTRIBUTION__C	1585685	0	0	1	N	N	Stands for Life Time Value Contribution but the field is not used anymore
+ODS_SFBILL_TRANSACTION__C	AUDIT_ETL_JOB_INS_TS	1585685	0	0	9580	N	M	Timestamp for when the data was loaded to the database
+ODS_SFBILL_TRANSACTION__C	REVENUE__OWNER__C	1585685	0	0	13	N	Y	Region that revenue is booked to.  Billing country is better
+ODS_SFBILL_TRANSACTION__C	SFBILL__BILLINGCOUNTRY__C	1585685	0	0	186	Y	Y	Billing country for the customer
+ODS_SFBILL_TRANSACTION__C	SFBILL__DATETIMEOFFSET__C	1585685	0	0	9	N	M	Date Time offset for Revenue Owner
+ODS_SFBILL_TRANSACTION__C	SFBILL__STATUS__C	1585685	0	0	13	N	M	transaction status
+ODS_SFBILL_TRANSACTION__C	SFBILL__ISTOBEPRINTED__C	1585685	0	0	2	N	N	collector sends to customer * not good for prediction
+ODS_SFBILL_TRANSACTION__C	SFBILL__ISTOBEEMAILED__C	1585685	0	0	2	N	N	collector sends to customer * not good for prediction
+ODS_SFBILL_TRANSACTION__C	SFBILL__INVOICERESENT__C	1585685	0	0	1	N	N	Was the invoice resent?  Doesn't look like it is used
+ODS_SFBILL_TRANSACTION__C	SFBILL__INVOICESRETURNED__C	1585685	0	0	1	N	N	Was the invoice retruned?  Doesn't look like it is used
+ODS_SFBILL_TRANSACTION__C	SFBILL__TAXBALANCEDUE__C	1585685	0	0	26578	N	Y	tax on the balance due
+ODS_SFBILL_TRANSACTION__C	SFBILL__TRANSACTIONAUTONUM__C	1585685	0	0	1585685	N	Y	Transaction number.  Not needed for model
+ODS_SFBILL_TRANSACTION__C	SFBILL__TOTALTAX__C	1585685	0	0	89862	Y	Y	Tax Amount
+ODS_SFBILL_TRANSACTION__C	SFBILL__TOTALPAYMENT__C	1585685	0	0	218747	N	N	Amount of the payment made
+ODS_SFBILL_TRANSACTION__C	SFBILL__TOTALWRITEOFF__C	1585685	0	0	5556	N	N	Amount of the contract written off as bad debt
+ODS_SFBILL_TRANSACTION__C	SFBILL__REVENUEOWNER__C	1585685	0	0	13	N	Y	Region that revenue is booked to.  Billing country is better
+ODS_SFBILL_TRANSACTION__C	SFBILL__TOTALCREDIT__C	1585685	0	0	33772	N	Y	Total amount of a credit if a customer has a credit on their account
+ODS_SFBILL_TRANSACTION__C	SFBILL__BALANCEDUE__C	1585685	0	0	71658	N	Y	Balance still due - will be 0 if paid which triggers days to pay
+ODS_SFBILL_TRANSACTION__C	SFBILL__TOTALAMOUNT__C	1585685	0	0	250100	Y	Y	Total Amount of the invoice
+ODS_SFBILL_TRANSACTION__C	SFBILL__TRANSACTIONDATE__C	1585685	0	0	290	N	N	Date that the invoice is sent?
+ODS_SFBILL_TRANSACTION__C	SFBILL__CONTRACT__C	1585685	0	0	398715	N	Y	Contract number - JOIN TO CONTRACT
+ODS_SFBILL_TRANSACTION__C	ID	1585685	0	0	1585685	Y	Y	This is the unique ID field for the Transaction object
